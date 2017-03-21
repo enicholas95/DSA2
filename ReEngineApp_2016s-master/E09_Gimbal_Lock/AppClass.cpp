@@ -31,7 +31,7 @@ void AppClass::Update(void)
 	matrix4 rotZ = glm::rotate(IDENTITY_M4, m_v3Orientation.z, REAXISZ);
 
 	//linear combination
-	m_mToWorld = rotX * rotY * rotZ;
+	m_mToWorld = rotZ * rotX * rotY;
 
 	//Setting the model matrix
 	m_pMeshMngr->SetModelMatrix(m_mToWorld, "Steve");

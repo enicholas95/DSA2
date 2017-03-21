@@ -21,6 +21,7 @@ void AppClass::ProcessKeyboard(void)
 		bModifier = true;
 #pragma endregion
 
+
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::R))
 	{
 		m_v3Orientation = vector3(0.0f);
